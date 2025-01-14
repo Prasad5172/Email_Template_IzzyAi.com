@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IzzyAi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 45px 30px 60px;
+            background: #111920;
+            font-size: 14px;
+            color: #434343;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: 800px 300px;
+            background-position: top top;
+            filter: blur(2px);
+            z-index: 0;
+        }
+
+        .main-content {
+            margin: 0;
+            margin-top: 40px;
+            padding: 50px 20px;
+            background: #e1e1e1;
+            border-radius: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+            color: #1f1f1f;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 0.56px;
+            color: #434343;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 490px;
+            margin: 20px auto 0;
+            text-align: center;
+            border-top: 1px solid #979797;
+        }
+
+        .footer-links a {
+            font-size: small;
+            color: #638df8;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 8px;
+            scale: 1.5;
+        }
+
+        .social-icons a i {
+            color: #2DEEAA;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .main-content {
+                padding: 40px 20px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+
+            footer {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+
+            .footer-links a {
+                font-size: smaller;
+            }
+
+            .social-icons a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td
+                            style="text-align: center; position: relative; height: 140px;display:flex;justify-content:center;">
+                            <img src="http://drive.google.com/uc?export=view&id=1R3OimiqIpRrTy3j2qsmdhGHsOT2ErpqP"
+                                alt="logo" width="50%" style="display:block" title="IzzyAI Logo" height="100px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <p style="margin-bottom: 10px;">Hello {name},</p>
+                <p style="margin-bottom: 5px;">
+                    We are sorry to see you go. Your subscription has been successfully cancelled.
+                    If you have any questions or concerns, please feel free to contact us.
+                </p>
+                <p style="margin-bottom: 4px;">
+                    We’re sorry to see you go! Your subscription has been successfully cancelled; but the good news is you’ll still have full access to your plan until the end of your current billing cycle.
+                </p>
+                <p style="margin-bottom: 4px;">
+                    Should you decide to return, you can resubscribe anytime by visiting our plans and pricing page: <a href="www.izzyai.com/plans-pricing" style="text-decoration: underline;">www.izzyai.com/plans-pricing</a>.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    If you have any questions or concerns, please don’t hesitate to contact our support team.
+                </p>
+                <p style="margin-bottom: 6px;">
+                    Thank you for being a part of IzzyAI, and we hope to see you again in the future!
+                </p>
+                <p style=" margin-bottom: 5px;">Best Regards,</p>
+                <p>The IzzyAI Team</p>
+            </div>
+
+            <p style="text-align: center; font-weight: 500; color: #979797; margin-top: 30px;">
+                Need help? Ask at
+                <a href="mailto:hello@izzyai.com" style="color:  #638df8; text-decoration: none;">hello@izzyai.com</a>.
+            </p>
+        </main>
+
+        <footer>
+            <p style="margin-top: 20px; font-size: 16px; font-weight: 600; color: #979797;">
+                Victoriam Inc.
+            </p>
+            <p style="margin-top: 8px; color: #979797;">
+                8 The Green STE A, Dover, Delaware 19901.
+            </p>
+            <div class="social-icons" style="margin-top: 16px;">
+                <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p style="margin-top: 16px; color: #979797;">
+                Copyright © 2025 IzzyAI a product of Victoriam Inc. All rights reserved.
+            </p>
+            <div class="footer-links" style="margin-top: 20px;">
+                <a href="https://vtm.ai">Home</a> |
+                <a href="http://localhost:3000/contact">Contact Us</a> |
+                <a href="https://izzyai.com/service">User Agreement</a> |
+                <a href="https://izzyai.com/privacy">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
