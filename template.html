@@ -65,6 +65,15 @@
             color: #434343;
         }
 
+        .otp {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 15px;
+            color: #ba3d4f;
+            margin-bottom: 10px;
+        }
+
         footer {
             width: 100%;
             max-width: 490px;
@@ -90,6 +99,51 @@
             color: #2DEEAA;
         }
 
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px;
+        }
+
+        .mb-4 {
+            margin-bottom: 4px;
+        }
+
+        .mb-3 {
+            margin-bottom: 3px;
+        }
+
+        .mb-6 {
+            margin-bottom: 6px;
+        }
+
+        .mb-12 {
+            margin-bottom: 12px;
+        }
+
+        .mb-15 {
+            margin-bottom: 15px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .link-color {
+            color: #638df8;
+        }
+
+        .font-bold {
+            font-weight: 600;
+            color: black;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
         /* Responsive Design */
         @media only screen and (max-width: 600px) {
             .container {
@@ -105,6 +159,10 @@
                 font-size: 20px;
             }
 
+            .otp {
+                font-size: 32px;
+                letter-spacing: 15px;
+            }
 
             footer {
                 max-width: 100%;
@@ -119,6 +177,20 @@
                 margin: 0 5px;
             }
         }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -129,15 +201,11 @@
                 <tbody>
                     <tr>
                         <td style="height: 140px; text-align: center;">
-                            <img 
-                                src="http://drive.google.com/uc?export=view&id=1R3OimiqIpRrTy3j2qsmdhGHsOT2ErpqP" 
-                                alt="logo" 
-                                title="IzzyAI Logo" 
-                                width="50%" 
-                                height="100px" 
-                                style="display: inline-block; margin: 0 auto;"
-                            >
+                            <img src="http://drive.google.com/uc?export=view&id=1R3OimiqIpRrTy3j2qsmdhGHsOT2ErpqP"
+                                alt="logo" title="IzzyAI Logo" width="50%" height="100px"
+                                style="display: inline-block; margin: 0 auto;">
                         </td>
+
                     </tr>
                 </tbody>
             </table>
@@ -145,25 +213,32 @@
 
         <main>
             <div class="main-content">
-                <p style="margin-bottom: 10px;">Hello {name},</p>
-                <p style="margin-bottom: 5px;">
-                    We are sorry to see you go. Your subscription has been successfully cancelled.
-                    If you have any questions or concerns, please feel free to contact us.
-                </p>
-                <p style="margin-bottom: 4px;">
-                    We’re sorry to see you go! Your subscription has been successfully cancelled; but the good news is you’ll still have full access to your plan until the end of your current billing cycle.
-                </p>
-                <p style="margin-bottom: 4px;">
-                    Should you decide to return, you can resubscribe anytime by visiting our plans and pricing page: <a href="www.izzyai.com/plans-pricing" style="text-decoration: underline;">www.izzyai.com/plans-pricing</a>.
-                </p>
-                <p style="margin-bottom: 15px;">
-                    If you have any questions or concerns, please don’t hesitate to contact our support team.
-                </p>
-                <p style="margin-bottom: 6px;">
-                    Thank you for being a part of IzzyAI, and we hope to see you again in the future!
-                </p>
-                <p style=" margin-bottom: 5px;">Best Regards,</p>
-                <p>The IzzyAI Team</p>
+                <p class="mb-5">Hi <span class="font-bold">{first_name}</span>,</p>
+                <p class="mb-10">We tried to process your payment for your IzzyAI Unlimited subscription, but
+                    unfortunately, it didn’t go through. Don’t worry—your Speech Guardian is waiting to
+                    support you, and we’re here to help resolve the issue quickly.</p>
+                <p class="mb-5">What to Do Next:</p>
+                <ul>
+                    <li>
+                        <p class="mb-10">Check that your payment details are up to date</p>
+                    </li>
+                    <li>
+                        <p class="mb-10">Update your payment method to ensure uninterrupted access to all your Unlimited
+                            features.</p>
+                    </li>
+                </ul>
+                <p class="mb-10 font-bold">[Update My Payment Details]</p>
+                <p class="mb-3">What Happens If It’s Not Fixed?</p>
+                <p class="mb-10">If we’re unable to process your payment, your subscription will automatically move to
+                    IzzyAI Basic on [Insert Date]. You’ll still have access to basic features, but Unlimited
+                    benets like 24/7 access to your AI therapist, personalized tools, and progress tracking
+                    will no longer be available.</p>
+                <p class="mb-10">We’d hate for you to lose all the progress you’ve made so far. Let’s get your subscription
+                    back on track today!</p>
+                <p class="mb-10 font-bold">[Fix My Payment Now]</p>
+                <p class="mb-3 font-bold">Warmly,</p>
+                <p class="mb-10 font-bold">The IzzyAI Team</p>
+                <p class="font-bold">[Please note: This is an automated message. Do not reply directly to this email]</p>
             </div>
 
             <p style="text-align: center; font-weight: 500; color: #979797; margin-top: 30px;">

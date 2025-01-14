@@ -1,3 +1,15 @@
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+SMTP_SERVER = os.getenv('SMTP_SERVER')
+SMTP_PORT = os.getenv('SMTP_PORT')
+SMTP_USERNAME = os.getenv('SMTP_USERNAME')
+SMTP_PASSWORD = os.getenv('SMTP_PASSWORD')
+
 # Dashboard Email Templates
 def send_saleperson_signup_link_email(recipient_email, signup_link):
     try:
