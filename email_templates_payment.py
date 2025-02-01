@@ -771,8 +771,6 @@ footer {{
     <span class="font-bold">Sign-up Link:</span>
     {signup_link}
 </p>
-
-
                 <p class="mb-5">If you weren’t expecting this email or believe it was sent in error, please don’t hesitate
                     to contact our support team for assistance.</p>
                 <p class="mb-10">Thank you for choosing IzzyAI. We look forward to supporting your clinic with our
@@ -1951,13 +1949,14 @@ def body_of_send_verification_email(otp_code, verification_link):
                     convert to IzzyAI Unlimited [Monthly] so you can continue your progress without
                     interruption.</p>
                 <button class="mb-10" onclick="location.href={verification_link};">Verify</button>
-
-                <p class="mb-10">Thank you for choosing IzzyAI.</p>
-                <p class="mb-3">Best regards,</p>
-                <p class="mb-10">The IzzyAI Team</p>
+                <p class="font-bold mb-10">Want to Save More?</p>
+                <p class="mb-5">You’ll also have the option to switch to our Annual Plan, which oers the best value and
+                    signicant savings. If you choose to switch, your annual subscription will begin at the
+                    start of your next billing cycle.</p>
+                <p class="mb-10">Thank you for choosing IzzyAI to guide your journey to condent speech!</p>
+                <p class="font-bold mb-10">The IzzyAI Team</p>
                 <p>[Please note: This is an automated message. Do not reply directly to this email]</p>
             </div>
-
             <p style="text-align: center; font-weight: 500; color: #979797; margin-top: 30px;">
                 Need help? Ask at
                 <a href="mailto:hello@izzyai.com" style="color:  #638df8; text-decoration: none;">hello@izzyai.com</a>.
@@ -2239,7 +2238,6 @@ def body_of_send_welcome_email(first_name):
                 <p>To help you get started, we’ve included a helpful Instructional Guide that explains how
                     to eectively use IzzyAI and make the most of its features. </p>
                 <p class="mb-10">Thanks,</p>
-                <p class="mb-3">Best regards,</p>
                 <p class="mb-10">The IzzyAI Team</p>
                 <p class="mb-10">P.S. Unlock unlimited access to all IzzyAI features and enjoy 24/7 availability to
                     AI-powered therapy by subscribing to the IzzyAI Unlimited plan today!</p>

@@ -133,8 +133,6 @@ def send_clinic_signup_link_email(recipient_email, sale_person_id, signup_link):
     except Exception as e:
         print(f"Failed to send sign-up link email: {e}")
 
-
-
 # Placeholder function for sending OTP email
 def send_otp_email_for_signup(recipient_email, otp):
     try:
@@ -242,8 +240,7 @@ def send_invoice_email(recipient_email, customer_name, invoice_id, total_amount,
         print(f"Invoice email sent successfully to {recipient_email}.")
     except Exception as e:
         print(f"Failed to send invoice email to {recipient_email}: {e}")
-
-        
+    
 # Mobile App and Website Email Templates 
 
 def send_email(recipient_email, subject, body):
